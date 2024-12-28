@@ -1,63 +1,14 @@
-  /*## NAVBAR */
 
-  .navbar { display: flex; background-color: #011638; position: fixed; width: 100vw}
+.navbar { display: flex; background-color: #011638; position: fixed; width: 100vw}
 
-  .ncclogopic { margin-left: 10px; object-fit: fill; width: 80px;}
+.ncclogopic { margin-left: 10px; object-fit: fill; width: 80px;}
 
-  .navbtndiv{margin-left: 70%;margin-top: 3%; }
+.navbtndiv{margin-left: 70%;margin-top: 3%; }
 
-  .navoptpic{width: 40px; border-radius: 4px;}
+.navoptpic{width: 40px; border-radius: 4px;}
 
-  .navbtn{height: 50px; width: 50px; background-color: #ffffff00; border: none; padding: 0%;}
+.navbtn{height: 50px; width: 50px; background-color: #ffffff00; border: none; padding: 0%;}
 
-  .navbtn:hover{background-color: #ffffff34; border-radius: 4px;}
+.navbtn:hover{background-color: #ffffff34; border-radius: 4px;}
 
-  .navbtn:active{background-color: #ffffff4d; border-radius: 4px;}
-
-  .hometoppic{width: 100vw;}
-
-  .homeintro1{background-color:#527Ac2; display: flex; flex-direction: column; padding: 20px;}
-
-  .hih1{color: azure; font-weight: 900;}
-
-  .hip{color: azure; font-weight: bold;}
-
-  .collgpic{width: 80%;}
-
-  .homeintro2{background-color: #cacac5; height: 300px;}
-
-  .hih1ls{background-image: linear-gradient(red,#527Ac2, #011638);color: transparent;background-clip: text;}
-
-  .homeintro3{background-color:#527Ac2; display: flex; flex-direction: column; padding: 20px;}
-
-  .pledgegpic{width: 80%;}
-
-  .homeintro4{background-color: #cacac5;display: flex; flex-direction: column; padding: 20px;}
-
-  .campimg{width: 80%; height: 150px; border-radius: 5px;}
-
-  .homeintro5{background:linear-gradient(#527Ac2,#cacac5);display: flex; flex-direction: column; padding: 20px;}
-
-  .rankpannelpic{width: 100%; opacity: 60%; filter: blur(2px);}
-
-  .homeintro6{background-color:#527Ac2; display: flex; flex-direction: column; padding: 20px;}
-
-  .galpic{width: 100%;}
-
-  .homeintro8 { display: flex; flex-direction: column; background-color: #011638; padding: 20px;}
-
-  .footer{width: 80%;}
-
-  .footinfo{display: flex; align-items: center; width: 80%; justify-content: space-between; width: 100%; }
-
-  .infodiv{display: flex; align-items: center;}
-
-  .infopic{width: 20px; height: 20px;}
-
-  .info{color: azure;}
-
-  .footercc{border: solid ; border-width: 2px 0px 0px 0px; border-color: #33d3ff;  }
-
-  .cc{color: aliceblue; font-size: 15px; font-family: serif;}
-
-
+.navbtn:active{background-color: #ffffff4d; border-radius: 4px;}
