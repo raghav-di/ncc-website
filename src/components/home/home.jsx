@@ -1,8 +1,6 @@
 import React from 'react'
 import './home.css'
 
-import  ncclogo  from '../../allAssets/assets/logo/logo (1).png';
-import navopt from '../../allAssets/assets/logo/navbaroptlogo.png';
 import hometoppic from '../../allAssets/assets/photo/hometoppic.png';
 import seniorcllg from '../../allAssets/assets/photo/seniorcol.png';
 import pledge from '../../allAssets/assets/photo/pledge.png';
@@ -19,14 +17,9 @@ import insta from '../../allAssets/assets/logo/instalogo.png'
 import mail from '../../allAssets/assets/logo/maillogo.png'
 
 
-export default function Navbar() {
-  return (
+export default function Navbar(props) {
+  return (props.trigger)?(
     <div>
-
-        <div className="navbar">
-            <div className="ncclogo"><img src={ncclogo} alt="" className="ncclogopic" /></div>
-            <div className="navbtndiv"><button className="navbtn"><img src={navopt} className='navoptpic' alt="" /></button></div>
-        </div>
 
         <div className="hometop"><img src={hometoppic} alt="" className="hometoppic" /></div>
 
@@ -97,5 +90,5 @@ export default function Navbar() {
         </div>
 
     </div>
-  )
+  ):""
 }

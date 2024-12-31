@@ -23,8 +23,8 @@ import event6 from '../../allAssets/assets/photo/warmemo (1).jpg'
 
 
 
-export default function camps() {
-  return (
+export default function camps(props) {
+  return (props.trigger)?(
     <div>
       <div className="container1">
         <h1 className="h1c1">CAMPS</h1>
@@ -83,6 +83,7 @@ export default function camps() {
             </div>
             <label htmlFor="ch5">read more</label>      
         </div></div>
+
         <div className="c1c"><div className="subc1c imgc">
             <img src={camp6} alt="" className="c1cimg " />
             <p className="c1ctxt">EK BHARAT SHRESHTH BHARAT</p>  
@@ -93,6 +94,7 @@ export default function camps() {
             </div>
             <label htmlFor="ch6">read more</label>       
         </div></div>
+
         <div className="c1c"><div className="subc1c imgc">
             <img src={camp7} alt="" className="c1cimg " />
             <p className="c1ctxt">ROCK CLIMBING TRAINING CAMP</p>  
@@ -128,8 +130,10 @@ export default function camps() {
 
       </div>
 
+
       <div className="container2">
         <h1 className="h1c2">EVENTS</h1>
+
         <div className="c2c"><div className="subc2c imgc">
             <img src={event1} alt="" className="c1cimg" />
             <p className="c2ctxt">INDEPENDENCE DAY</p>
@@ -223,5 +227,5 @@ export default function camps() {
             </div>
         </div>
     </div>
-  )
+  ):""
 }
