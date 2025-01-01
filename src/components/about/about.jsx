@@ -14,9 +14,9 @@ import mail from '../../allAssets/assets/logo/maillogo.png'
 
 export default function about(props) {
   return (props.trigger)?(
-    <div>
+    <div id='aboutbody'>
 
-      <div className="container1">
+      <div id="container1">
         <div className="subc1">
             <div className="subsubc1"><p className="c1txt">17</p><p className="c1txt">No of Directorates</p></div>
             <div className="subsubc1"><p className="c1txt">165K+</p><p className="c1txt">No. of cadets in senoir divison(Army)</p></div>
@@ -26,8 +26,8 @@ export default function about(props) {
             <div className="subsubc1"><p className="c1txt">62K+</p><p className="c1txt">No. of cadets in senoir divison(Navy)</p></div>
         </div>
       </div>
-      <div className="container2">
-        <div className="abtc2">
+      <div id="container2">
+
             <h1 className="h1c2">NATIONAL CADET CORPS</h1>
 
             <img src={abt1} alt="" className="abtc2img" />
@@ -45,10 +45,10 @@ export default function about(props) {
             <p className="abtc2txt">The National Cadet Corps (NCC) program at Maharaja Agrasen Institute of Technology (MAIT) embodies the vision of "Amrit Kaal," as introduced by Hon'ble Prime Minister Shri Narendra Modi. Our NCC unit is committed to nurturing disciplined, responsible, and empowered individuals who contribute to the holistic development of society. Rooted in the principles of unity and discipline, our program instills leadership, character, and a spirit of service among cadets. Through a regimented way of life, we empower cadets to confront challenges, exceed their limits, and uphold the values of honesty, integrity, and selflessness. With a focus on sustainable and inclusive development, technology, and innovation, we prepare cadets to become the torchbearers of India's bright future. Join us as we embark on a journey to realize the vision of "Amrit Kaal" and shape a prosperous, inclusive, and empowered New India. It’s not just about drill, ragda, camps, ranks or uniform, but developing yourself better than yesterday.</p>
             <p className="abtc2txt">we take pride in fostering holistic development among our cadets. As part of our commitment to nurturing well-rounded individual.</p>
             <p className="abtc2txt">Our institution hosts two units of the National Cadet Corps (NCC) - the 7 Delhi Boys Battalion (7DBN) Group C and the 2 Delhi Girls Battalion (2DGBN) Group B. These units, respectively led by HQ NCC Bhawan Rohini under the command of COl. VK Upreti for the senoir division, and Col. Sandeep Rajora for the senoir wing, serve as pillars of discipline, leadership, and service within our campus community.</p>
-        </div>
+
       </div>
 
-      <div className="container3">
+      <div id="cont3">
         <h1 className="h1c3">NCC MOTO</h1>
         <img src={abt3} alt="" className="c3img" />
         <p className="c3txt">The motto of the National Cadet Corps (NCC) is "Unity and Discipline." This concise phrase encapsulates the core values and principles that the NCC instills in its cadets. "Unity" represents the importance of working together and fostering a sense of togetherness among the diverse youth of the nation. "Discipline" signifies the cultivation of self-control, order, and adherence to a code of conduct.</p>
@@ -57,7 +57,7 @@ export default function about(props) {
         <p className="c3txt">In 1954 the existing tricolour flag was introduced. The three colours in the flag depict the three services of the Corps, red for the Army, deep blue for the Navy and light blue for the Air Force. The letters NCC and the NCC crest in gold in the middle of the flag encircled by a wreath of lotus, give the flag a colourful look and a distinct identity.</p>
       </div>
 
-      <div className="container4">
+      <div id="container4">
         <h1 className="h1c4">NCC SONG</h1>
         <img src={abt5} alt="" className="c4img" />
         <p className="c4txt">Hum Sab Bharatiya Hain, Hum Sab Bharatiya Hain Apni Manzil Ek Hai, Ha, Ha, Ha, Ek Hai,Ho, Ho, Ho, Ek Hai. Hum Sab Bharatiya Hain. </p>
@@ -66,11 +66,11 @@ export default function about(props) {
         <p className="c4txt">Ek Hee Apna Ram Hain, Ek hi Allah Taala Hai, Ek Hee Allah Taala Hain, Raang Birange Deepak Hain Hum, lekin Jagmag Ek Hai, Ha Ha Ha Ek Hai, Ho Ho Ho Ek Hai. Hum Sab Bharatiya Hain, Hum Sab Bharatiya Hain.</p>
       </div>
 
-      <div className="container5">
+      <div id="container5">
         <h1 className="h1c5">ORGANISATIONAL STRUCTURE</h1>
       </div>
 
-      <div className="container6">
+      <div id="container6">
             <div><img src={footer} alt="" className="footer" /></div>
             <div className="footinfo">
                 <div className='infodiv'>

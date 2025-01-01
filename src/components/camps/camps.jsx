@@ -26,7 +26,7 @@ import event6 from '../../allAssets/assets/photo/warmemo (1).jpg'
 export default function camps(props) {
   return (props.trigger)?(
     <div>
-      <div className="container1">
+      <div id="container1">
         <h1 className="h1c1">CAMPS</h1>
 
         <div className="c1c"><div className="subc1c imgc">
@@ -131,7 +131,7 @@ export default function camps(props) {
       </div>
 
 
-      <div className="container2">
+      <div id="container2">
         <h1 className="h1c2">EVENTS</h1>
 
         <div className="c2c"><div className="subc2c imgc">
@@ -208,7 +208,7 @@ export default function camps(props) {
         </div></div> */}
       </div>
 
-      <div className="container3">
+      <div id="cont3">
             <div><img src={footer} alt="" className="footer" /></div>
             <div className="footinfo">
                 <div className='infodiv'>

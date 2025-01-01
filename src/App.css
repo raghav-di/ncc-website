@@ -1,11 +1,11 @@
-.App {text-align: center;display: flex; flex-direction: column;}
+#App {text-align: center;display: flex; flex-direction: column;}
 
 .navbar {display: flex;  background-color: #011638; position: fixed; width: 100vw ;z-index: 2;}
 
 
 .ncclogopic { margin-left: 10px; object-fit: fill; width: 75px;z-index:2;}
 
-.navbtndiv{position: fixed; right: 25px; display: flex; justify-content: center; align-items: center; padding: 4px;z-index:2;}
+.navbtndiv{position: fixed;top: 15px; right: 25px; display: flex; justify-content: center; align-items: center; padding: 4px;z-index:2;}
 
 .navoptpic{width: 40px; border-radius: 4px;z-index:2;}
 
@@ -29,6 +29,6 @@
 
 .about{margin-top:75px;z-index: 1;}
 
-.camps{margin-top:75px;z-index: 1;}
+.camps{margin-top:0px;z-index: 1;}
 
 .allphotos{margin-top:75px;z-index: 1;}

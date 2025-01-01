@@ -18,7 +18,7 @@ function App() {
   const[campsBtn,setCampsBtn]=useState(false);
   const[photosBtn,setPhotosBtn]=useState(false);
   return (
-    <div className="App">
+    <div id="App">
       <div className="navbar">
         <div className="ncclogo"><img src={ncclogo} alt="" className="ncclogopic" /></div>
       </div>  
@@ -55,7 +55,7 @@ function App() {
         <Camps trigger={(campsBtn)} setTrigger={setCampsBtn}/>
       </div>
       <div className="photos">
-        <Photos trigger={photosBtn} setTrigger={setPhotosBtn}/>
+        <Photos trigger={(photosBtn)} setTrigger={setPhotosBtn}/>
       </div>
       {/* <div className="allphotos">
         <Allphotos/>

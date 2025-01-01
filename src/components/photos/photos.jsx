@@ -18,10 +18,10 @@ import insta from '../../allAssets/assets/logo/instalogo.png'
 import mail from '../../allAssets/assets/logo/maillogo.png'
 
 
-export default function photos() {
-  return (
+export default function photos(props) {
+  return (props.trigger)?(
     <div>
-      <div className="container1">
+      <div id="container1">
         <h1 className="h1c1">PHOTO GALLARY</h1>
         <div className="sc">
             <img src={pic1} alt="" className="scimg" />
@@ -86,7 +86,7 @@ export default function photos() {
       <button>explore more...</button>
       </div>
 
-      <div className="container3">
+      <div id="container3">
             <div><img src={footer} alt="" className="footer" /></div>
             <div className="footinfo">
                 <div className='infodiv'>
@@ -106,5 +106,5 @@ export default function photos() {
         </div>
         
     </div>
-  )
+  ):""
 }

@@ -1,4 +1,4 @@
-.container1{background-color: #527Ac2;padding: 20px; display: flex;flex-direction: column; align-items: center;}
+#container1{background-color: #527Ac2;padding: 20px; display: flex;flex-direction: column; align-items: center;}
 
 .subc1c{ background-color: azure;border-radius: 3px;}
 
@@ -9,7 +9,7 @@
 .c1cimg{width: 65%; margin: 10px; border-radius: 10px;}
 
 
-.container2{padding: 20px; display: flex;flex-direction: column; align-items: center;}
+#container2{padding: 20px; display: flex;flex-direction: column; align-items: center;}
 
 .subc2c{ background-color: azure;border-radius: 3px;}
 
@@ -25,7 +25,7 @@
 .imgc p:hover{color:#052353 ;font-weight: bold;}
 
 
-.container3 { display: flex; flex-direction: column; background-color: #011638; padding: 20px;}
+#container3 { display: flex; flex-direction: column; background-color: #011638; padding: 20px;}
 
 .cb{border: none;background-color: azure;}
 
