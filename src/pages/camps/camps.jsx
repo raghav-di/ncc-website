@@ -23,8 +23,8 @@ import event6 from '../../allAssets/assets/photo/warmemo (1).jpg'
 
 
 
-export default function camps(props) {
-  return (props.trigger)?(
+export default function camps() {
+  return (
     <div>
       <div id="container1">
         <h1 className="h1c1">CAMPS</h1>
@@ -227,5 +227,5 @@ export default function camps(props) {
             </div>
         </div>
     </div>
-  ):""
+  )
 }

@@ -18,8 +18,8 @@ import insta from '../../allAssets/assets/logo/instalogo.png'
 import mail from '../../allAssets/assets/logo/maillogo.png'
 
 
-export default function photos(props) {
-  return (props.trigger)?(
+export default function photos() {
+  return (
     <div>
       <div id="container1">
         <h1 className="h1c1">PHOTO GALLARY</h1>
@@ -106,5 +106,5 @@ export default function photos(props) {
         </div>
         
     </div>
-  ):""
+  )
 }

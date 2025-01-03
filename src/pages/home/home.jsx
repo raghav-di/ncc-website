@@ -17,10 +17,11 @@ import insta from '../../allAssets/assets/logo/instalogo.png'
 import mail from '../../allAssets/assets/logo/maillogo.png'
 
 
-export default function Navbar(props) {
-  return (props.trigger)?(
+export default function Navbar() {
+  return(
     <div id='homebody'>
 
+        homebody.............
         <div className="hometop"><img src={hometoppic} alt="" id="hometoppic" /></div>
 
         <div id="homeintro1">
@@ -35,6 +36,23 @@ export default function Navbar(props) {
 
         <div id="homeintro2">
             <h1 className="hih1ls">AIM OF NCC</h1>
+            <div id="aims">
+                <div id="aim1" className='aim'>
+                    <div className="cover">
+                        <h6 className="aimtxt">To Develop Character and Leadership</h6>                    
+                    </div>
+                </div>
+                <div id="aim2" className='aim'>
+                    <div className="cover">
+                        <h6 className="aimtxt">To Create a Human Resource of Organized, Trained and Motivated Youth.</h6>
+                    </div>
+                </div>
+                <div id="aim3" className='aim'>
+                    <div className="cover">
+                        <h6 className="aimtxt">To Provide a Suitable Environment to Motivate the Youth to join the Armed Forces.</h6>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="homeintro3">
@@ -67,7 +85,7 @@ export default function Navbar(props) {
         </div>
 
         <div id="homeintro7">
-            Explore more...
+            <button className='photogalbtn' ></button>
         </div>
 
         <div id="homeintro8">
@@ -90,5 +108,5 @@ export default function Navbar(props) {
         </div>
 
     </div>
-  ):""
+  )
 }

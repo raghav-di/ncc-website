@@ -1,51 +1,47 @@
 import './App.css';
 
-import Home from './components/home/home.jsx';
-import About from './components/about/about.jsx'
-import Camps from './components/camps/camps.jsx'
-import Photos from './components/photos/photos.jsx'
-import Allphotos from './components/Allphotos/Allphotos.jsx'
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Home from './pages/home/home.jsx'
+import About from './pages/about/about'
+import Camps from './pages/camps/camps'
+import Photos from './pages/photos/photos'
+import New from './pages/new/New.jsx'
+import Navbar from './pages/navbar/navbar.jsx';
 
-import  ncclogo  from './allAssets/assets/logo/logo (1).png';
-import navopt from './allAssets/assets/logo/navbaroptlogo.png';
+// import Home from './components/home/home.jsx';
+// import About from './components/about/about.jsx'
+// import Camps from './components/camps/camps.jsx'
+// import Photos from './components/photos/photos.jsx'
+// import Allphotos from './components/Allphotos/Allphotos.jsx'
 
-import { useState } from 'react';
+// import  ncclogo  from './allAssets/assets/logo/logo (1).png';
+// import navopt from './allAssets/assets/logo/navbaroptlogo.png';
+
+// import { useState } from 'react';
 
 
 function App() {
-  const[homeBtn,setHomeBtn]=useState(true);
-  const[aboutBtn,setAboutBtn]=useState(false);
-  const[campsBtn,setCampsBtn]=useState(false);
-  const[photosBtn,setPhotosBtn]=useState(false);
+  // const[homeBtn,setHomeBtn]=useState(true);
+  // const[aboutBtn,setAboutBtn]=useState(false);
+  // const[campsBtn,setCampsBtn]=useState(false);
+  // const[photosBtn,setPhotosBtn]=useState(false);
+  // const[allPhotoBtn,setAllPhotoBtn]=useState(false)
   return (
     <div id="App">
-      <div className="navbar">
-        <div className="ncclogo"><img src={ncclogo} alt="" className="ncclogopic" /></div>
-      </div>  
 
-      <div className="navbtndiv">
-        <input name='navbtn' type="checkbox" id='navbtn' className='navbt'/>
-        <label htmlFor="navbtn" id='navlabel'><img src={navopt} className='navoptpic' alt="" /></label>
+      <Navbar/>
 
-        <div className="nav">
-          <div className="navopt">
-            <div className="hmopt">
-              <button onClick={()=>(setHomeBtn(true),setAboutBtn(false),setCampsBtn(false),setPhotosBtn(false))}><h4 className='opttxt'>Home</h4></button>                
-            </div>
-            <div className="abtopt">
-              <button onClick={()=>(setHomeBtn(false),setAboutBtn(true),setCampsBtn(false),setPhotosBtn(false))}><h4 className='opttxt'>About</h4></button>
-            </div>
-            <div className="cmpopt">
-              <button onClick={()=>(setHomeBtn(false),setAboutBtn(false),setCampsBtn(true),setPhotosBtn(false))}><h4 className='opttxt'>Camps</h4></button>
-            </div>
-            <div className="phtopt">
-              <button onClick={()=>(setHomeBtn(false),setAboutBtn(false),setCampsBtn(false),setPhotosBtn(true))}><h4 className='opttxt'>Photos</h4></button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />}/>
+          <Route path='/home' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/camps' element={<Camps/>}/>
+          <Route path='/photos' element={<Photos/>}/>
+        </Routes>
+      </BrowserRouter>
 
-      <div className="home">
+      {/* <div className="home">
         <Home trigger={(homeBtn)} setTrigger={setHomeBtn}/>
       </div>
       <div className="about">
@@ -57,8 +53,8 @@ function App() {
       <div className="photos">
         <Photos trigger={(photosBtn)} setTrigger={setPhotosBtn}/>
       </div>
-      {/* <div className="allphotos">
-        <Allphotos/>
+      <div className="allphotos">
+        <Allphotos trigger={(allPhotosBtn)} setTrigger={setAllPhotosBtn}/>
       </div> */}
     </div>
   );

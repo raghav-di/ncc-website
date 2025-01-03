@@ -12,8 +12,8 @@ import mail from '../../allAssets/assets/logo/maillogo.png'
 
 
 
-export default function about(props) {
-  return (props.trigger)?(
+export default function about() {
+  return (
     <div id='aboutbody'>
 
       <div id="container1">
@@ -89,5 +89,5 @@ export default function about(props) {
             </div>
         </div>
     </div>
-  ):""
+  )
 }
